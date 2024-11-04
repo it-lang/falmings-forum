@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новости Falmings RolePlay</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: radial-gradient(circle, #0d0d0d, #1d1f27);
+            color: #f3f3f3;
+        }
+        
+        .news-section {
+            padding: 60px 20px;
+            text-align: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .news-section h3 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #f39c12;
+        }
+        
+        .news-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        
+        .news-card {
+            background: #2c3e50;
+            padding: 20px;
+            width: 100%;
+            max-width: 350px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .news-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+        }
+        
+        .news-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        
+        .news-card h4 {
+            color: #e67e22;
+            margin-bottom: 10px;
+        }
+        
+        .news-card p {
+            color: #dcdcdc;
+            line-height: 1.5;
+        }
+        
+        .news-card a {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 8px 16px;
+            color: #ffffff;
+            background-color: #f39c12;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        
+        .news-card a:hover {
+            background-color: #e67e22;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="news-section">
+        <h3>Новости проекта</h3>
+        <div class="news-container">
+            <div class="news-card">
+                <img src="image1.jpg" alt="Обновление 1.1">
+                <h4>Обновление 1.1 - Новые функции и исправления</h4>
+                <p>Последнее обновление принесло множество новых функций, улучшений и исправлений ошибок. Ознакомьтесь с полным списком изменений!</p>
+                <a href="#">Читать далее</a>
+            </div>
+            <div class="news-card">
+                <img src="image2.jpg" alt="Конкурс для игроков">
+                <h4>Конкурс для игроков - выиграй VIP-доступ!</h4>
+                <p>Участвуйте в нашем конкурсе и получите шанс выиграть VIP-доступ и эксклюзивные предметы!</p>
+                <a href="#">Читать далее</a>
+            </div>
+            <div class="news-card">
+                <img src="image3.jpg" alt="Открытие нового сервера">
+                <h4>Открытие нового сервера - больше возможностей для ролевой игры</h4>
+                <p>Присоединяйтесь к нашему новому серверу и испытайте новые сценарии, задания и возможности!</p>
+                <a href="#">Читать далее</a>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

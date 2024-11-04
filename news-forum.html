@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новости форума Falmings RolePlay</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: radial-gradient(circle, #0d0d0d, #1d1f27);
+            color: #f3f3f3;
+        }
+        
+        .forum-news-section {
+            padding: 60px 20px;
+            text-align: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .forum-news-section h3 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #f39c12;
+        }
+        
+        .forum-news-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        
+        .forum-news-card {
+            background: #2c3e50;
+            padding: 20px;
+            width: 100%;
+            max-width: 350px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .forum-news-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+        }
+        
+        .forum-news-card h4 {
+            color: #e67e22;
+            margin-bottom: 10px;
+        }
+        
+        .forum-news-card p {
+            color: #dcdcdc;
+            line-height: 1.5;
+        }
+        
+        .forum-news-card a {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 8px 16px;
+            color: #ffffff;
+            background-color: #f39c12;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        
+        .forum-news-card a:hover {
+            background-color: #e67e22;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="forum-news-section">
+        <h3>Новости форума</h3>
+        <div class="forum-news-container">
+            <div class="forum-news-card">
+                <h4>Тема: Изменения правил сервера</h4>
+                <p>В разделе "Объявления" появились новые правила сервера. Ознакомьтесь с ними, чтобы избежать нарушений.</p>
+                <a href="">Читать на форуме</a>
+            </div>
+            <div class="forum-news-card">
+                <h4>Тема: Голосование за новое обновление</h4>
+                <p>Примите участие в голосовании за новые функции! Поделитесь мнением и внесите вклад в развитие сервера.</p>
+                <a href="#">Проголосовать</a>
+            </div>
+            <div class="forum-news-card">
+                <h4>Тема: Советы для новичков</h4>
+                <p>В этом разделе игроки делятся полезными советами и помогают новичкам освоиться на сервере.</p>
+                <a href="#">Читать советы</a>
+            </div>
+        </div>
+    </section>
+    <section class="forum-news-section">
+        <h3>Новости Сайта</h3>
+        <div class="forum-news-container">
+            <div class="forum-news-card">
+                <h4>Тема: Добавление FAQ</h4>
+                <p>У нас появился раздел с "FAQ" где вы можете задать вопрос Администрации</p>
+                <a href="#">Читать на Сайте</a>
+            </div>
+            <div class="forum-news-card">
+                <h4>Тема: Голосование за новое функции в сайте</h4>
+                <p>Примите участие в голосовании за новые функции! Поделитесь мнением и внесите вклад в развитие сервера.</p>
+                <a href="#">Проголосовать</a>
+            </div>
+            <div class="forum-news-card">
+                <h4>Тема: Советы для новичков</h4>
+                <p>В этом разделе игроки делятся полезными советами и помогают новичкам освоиться на сервере.</p>
+                <a href="#">Читать советы</a>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
