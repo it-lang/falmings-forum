@@ -6,219 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Falmings RolePlay</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Arial', sans-serif;
-            background: radial-gradient(circle, #0d0d0d, #1d1f27);
-            color: #f3f3f3;
-        }
-        
-        header {
-            background: linear-gradient(45deg, #141e30, #243b55);
-            padding: 15px 20px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        
-        .logo {
-            font-size: 28px;
-            font-family: 'Georgia', serif;
-            color: #f39c12;
-            letter-spacing: 1px;
-            text-shadow: 2px 2px 4px #000;
-        }
-        
-        .menu {
-            list-style: none;
-            display: flex;
-            gap: 20px;
-        }
-        
-        .menu li a {
-            color: #ffffff;
-            text-decoration: none;
-            padding: 8px 16px;
-            border-radius: 4px;
-            transition: all 0.3s ease;
-        }
-        
-        .menu li a:hover {
-            background-color: #f39c12;
-            color: #000;
-        }
-        
-        .hero {
-            text-align: center;
-            padding: 80px 20px;
-            background: linear-gradient(to right, #141e30, #243b55);
-            color: #ffffff;
-            box-shadow: inset 0px 0px 100px rgba(0, 0, 0, 0.5);
-        }
-        
-        .hero h2 {
-            font-size: 42px;
-            margin-bottom: 15px;
-            text-transform: uppercase;
-            text-shadow: 2px 2px 6px #000;
-        }
-        
-        .hero p {
-            font-size: 20px;
-            margin-bottom: 20px;
-            color: #dcdcdc;
-        }
-        
-        .btn {
-            display: inline-block;
-            padding: 12px 24px;
-            margin: 10px;
-            font-size: 18px;
-            color: #ffffff;
-            background: linear-gradient(45deg, #f39c12, #e67e22);
-            border: none;
-            border-radius: 25px;
-            text-decoration: none;
-            transition: background 0.3s ease;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
-        }
-        
-        .btn:hover {
-            background: linear-gradient(45deg, #e67e22, #f39c12);
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-        }
-        
-        .news {
-            padding: 60px 20px;
-            text-align: center;
-        }
-        
-        .news h3 {
-            font-size: 36px;
-            margin-bottom: 20px;
-            color: #f39c12;
-        }
-        
-        .news-for {
-            padding: 60px 20px;
-            text-align: center;
-        }
-        
-        .news-forum {
-            background: #2c3e50;
-            padding: 20px;
-            margin: 10px auto;
-            max-width: 600px;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-        }
-        
-        .news-for h3 {
-            font-size: 36px;
-            margin-bottom: 20px;
-            color: #f39c12;
-        }
-        
-        .news-card {
-            background: #2c3e50;
-            padding: 20px;
-            margin: 10px auto;
-            max-width: 600px;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-        }
-        
-        .news-card h4 {
-            color: #e67e22;
-            margin-bottom: 10px;
-        }
-        
-        .gallery {
-            padding: 60px 20px;
-            text-align: center;
-            color: #dcdcdc;
-        }
-        
-        .faq {
-            padding: 60px 20px;
-            text-align: center;
-            background-color: #243b55;
-            border-radius: 10px;
-            margin: 40px auto;
-            max-width: 800px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-        }
-        
-        .faq h3 {
-            font-size: 36px;
-            color: #f39c12;
-            margin-bottom: 20px;
-        }
-        
-        .faq-item {
-            margin-bottom: 20px;
-        }
-        
-        .faq-item h4 {
-            font-size: 24px;
-            color: #e67e22;
-            cursor: pointer;
-            transition: color 0.3s ease;
-        }
-        
-        .faq-item h4:hover {
-            color: #f39c12;
-        }
-        
-        .faq-item p {
-            font-size: 18px;
-            color: #dcdcdc;
-            margin-top: 10px;
-            display: none;
-        }
-        
-        footer {
-            background: #111;
-            padding: 30px 20px;
-            text-align: center;
-            color: #777;
-        }
-        
-        .social-links {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin-top: 10px;
-        }
-        
-        .social-links li a {
-            color: #f39c12;
-            font-size: 20px;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-        
-        .social-links li a:hover {
-            color: #ffffff;
-        }
-        /* медиа-запросы */
-        
-        @media (max-width: 768px) {
-            body {
-                background-color: lightblue;
-            }
-            .menu {
-                flex-direction: column;
-            }
-        }
-    </style>
 </head>
 
 <body>
@@ -284,23 +71,77 @@
                 <p>Для связи с поддержкой обратитесь к нам через раздел "Контакты" или присоединитесь к нашему серверу Discord для оперативной помощи.</p>
             </div>
         </section>
+
+        <!-- Социальные сети и ВКонтакте виджет -->
+        <section class="social">
+            <h3>Присоединяйтесь к нам в социальных сетях</h3>
+            <ul class="social-links">
+                <li><a href="https://vk.com/ваша_группа" target="_blank">ВКонтакте</a></li>
+                <li><a href="https://youtube.com/ваш_канал" target="_blank">YouTube</a></li>
+                <li><a href="https://discord.gg/ваш_сервер" target="_blank">Discord</a></li>
+            </ul>
+            <div id="vk_groups"></div>
+        </section>
     </main>
 
     <footer>
         <p>© 2024 Falmings RolePlay. Все права защищены.</p>
-        <ul class="social-links">
-            <li><a href="#">ВКонтакте</a></li>
-            <li><a href="#">YouTube</a></li>
-            <li><a href="#">Discord</a></li>
-        </ul>
     </footer>
 
+    <!-- Скрипт ВКонтакте -->
+    <script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script>
+    <script type="text/javascript">
+        VK.Widgets.Group("vk_groups", {
+            mode: 4,
+            width: "300",
+            height: "400"
+        }, 228129238); // Замените YOUR_GROUP_ID на ID вашей группы
+    </script>
+
+    <!-- FAQ и интерактивность -->
     <script>
         function toggleFAQ(element) {
             const answer = element.nextElementSibling;
             answer.style.display = answer.style.display === "none" || answer.style.display === "" ? "block" : "none";
         }
     </script>
+
+    <!-- Всплывающее уведомление -->
+    <script>
+        function showNotification(message) {
+            const notification = document.createElement('div');
+            notification.className = 'notification';
+            notification.textContent = message;
+            document.body.appendChild(notification);
+
+            setTimeout(() => notification.remove(), 5000);
+        }
+    </script>
+
+    <!-- Стиль уведомлений -->
+    <style>
+        .notification {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            background: #333;
+            color: #fff;
+            border-radius: 5px;
+            opacity: 0.9;
+            z-index: 1000;
+            animation: fadeIn 0.5s;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 0.9;
+            }
+        }
+    </style>
 </body>
 
 </html>
